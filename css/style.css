@@ -1,0 +1,244 @@
+/*Skip To Main Styling*/
+
+.skip a {
+    position: absolute;
+    top: -65px;
+    font-size: 18px;
+    padding: 8px;
+    color: black;
+}
+
+.skip a:focus {
+    top: 25px;
+    background-color: #FAEBD7;
+    border: 3px solid #242F40;
+}
+
+
+/*hamburger nav*/
+
+.topnav {
+    background-color: #A53860;
+    position: relative;
+    padding: 10px;
+}
+
+/* Hamburger menu icon styling */
+.menu_icon img {
+    border-radius: 5px;
+    width: 40px;
+    height: auto;
+    float: right;
+    cursor: pointer;
+
+}
+
+.menu_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+#myLinks {
+    display: none;
+    flex-direction: column;
+}
+
+
+#myLinks a {
+    color: #FAEBD7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #A53860;
+    border-bottom: 1px solid #FAEBD7;
+}
+
+#myLinks a:hover {
+    background-color: #FAEBD7;
+    color: black;
+}
+
+#myLinks .active{
+    background-color: #FAEBD7;
+    color:#242F40;
+}
+
+/*Adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
+
+
+
+/*setting color palette*/
+/*
+#FAEBD7
+#A53860
+#B7c9e2
+#242F40
+*/
+
+body {
+    background-color: #B7c9e2;
+    color: #242F40;
+}
+
+
+footer {
+    color: #FAEBD7;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #A53860;
+}
+
+
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0 20px 0;
+    font-family: 'Lucida Handwriting';
+    color: #FAEBD7;
+    background-color: #A53860;
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+p {
+    font-size: 14px;
+}
+
+
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
+
+
+
+.recipe_of_the_week {
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+    font-weight: bolder;
+}
+
+
+.entree_container,
+.sides_container,
+.dessert_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items:stretch;
+    justify-content:center;
+}
+
+.recipe_of_the_week_card{
+       border-left: 1em solid #B7c9e2;
+        border-right: 1em solid #B7c9e2;
+}
+
+div.recipe_of_the_week_card{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.recipe_of_the_week_card h2{
+     text-align: center;
+    padding-bottom: 1em;
+}
+
+.recipe_card, .recipe_of_the_week_card {
+    box-sizing: border-box;
+    min-width: 350px;
+    max-width: 500px;
+    flex: 1 0 0;
+    padding: 2em;
+    background-color: #FAEBD7;
+    border-radius: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: all .3s ease-in-out;
+}
+
+.recipe_card{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+
+
+div.recipe_card , div.recipe_of_the_week_card{
+    text-align: center;
+}
+
+
+ol.recipe_steps{
+    display:inline-block;
+    text-align: left;
+    padding-top: 1.5em;
+    list-style:decimal;
+    list-style-position: inside;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+
+.recipe_card:hover, .recipe_of_the_week_card:hover {
+    transform: scale(1.05);
+}
+
+
+.recipe_card h2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+
+
+.tagline{
+    box-sizing: border-box;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.website-summary p{
+    box-sizing: border-box;
+    padding-bottom: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: 1em;
+    line-height: 1.15;
+    font-size: 16px;
+    background-color: #FAEBD7;
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.website-summary{
+    transition: all .3s ease-in-out;
+}
+
+.website-summary:hover{
+    transform: scale(1.05);
+}
+
