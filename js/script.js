@@ -43,8 +43,8 @@ document.querySelector(".menu_icon").addEventListener("keydown", function (event
 
 
 
-document.querySelector(".recipe_of_the_week_card").addEventListener("keydown", function (event) {
+document.querySelector(".recipe_week_box").addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
-        document.querySelectorAll(".recipe_of_the_week_card").click();
+        document.querySelectorAll(".recipe_week_box").click();
     }
 });
