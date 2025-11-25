@@ -17,6 +17,11 @@
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
         <div class="topnav">
+
+            <div class="menu_icon">
+                <img src="images/menu_icon.png" alt="Menu Icon" tabindex="0">
+            </div>
+
             <nav>
                 <div id="myLinks">
                     <a href="index.html" class="active">Home</a></li>
@@ -25,10 +30,6 @@
                     <a href="desserts.html">Desserts</a></li>
                 </div>
             </nav>
-
-            <div class="menu_icon" tabindex="0">
-                <img src="images/menu_icon.png" alt="Menu Icon" onclick="myFunction()">
-            </div>
         </div>
 
 
@@ -51,16 +52,22 @@
                 built for people who just can't choose or need some inspriation to keep meals interesting.</p>
         </div>
 
+
         <div class="recipe_of_the_week" tabindex="0">
             <h2>Recipe of the Week!</h2>
         </div>
 
-        <div class="recipe_of_the_week_card" tabindex="0">
-                <h2>Homemade Chipotle Bowls</h2>
-                <a href="entrees.html#recipe-of-week">
+        <div class="recipe_week_box">
+            <a href="entrees.html#recipe-of-week">
+                <div class="recipe_of_the_week_card" tabindex="0">
+
+                    <h2>Homemade Chipotle Bowls</h2>
                     <img src="images/chipotle_bowl.jpg" alt="Chipotle bowl with chicken, beans and veggetables">
-                </a>
+
+                </div>
+            </a>
         </div>
+
 
     </main>
 
@@ -69,8 +76,7 @@
         <p>Created Fall <span id="year"></span> by Alexandra Schweid for SI 539</p>
     </footer>
 
-    <script src="js/script.js">
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
