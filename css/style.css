@@ -332,7 +332,10 @@ footer p{
     font-size: 18px;
 }
 
-
+.social-media-icon svg{
+    width:60px;
+    height:auto;
+}
 
 
 }
