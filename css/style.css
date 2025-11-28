@@ -94,6 +94,53 @@ footer {
     margin-top: 2em;
     padding: 1em;
     background-color: #A53860;
+    line-height: 1.25;
+}
+
+footer p{
+    font-size: 16px;
+}
+
+footer p:first-child{
+    padding-bottom: 1em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social-media-icon-group {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:15px;
+    justify-content: right;
+    align-content: center;
+    width: auto;
+}
+
+
+.social-media-icon svg{
+    width:40px;
+    height:auto;
+    fill:#FAEBD7;
+}
+
+
+ .social-media-icon{
+  display: inline-block;
 }
 
 
@@ -219,6 +266,13 @@ li {
     padding-bottom: 1em;
 }
 
+.seasoning_options{
+    padding-top: 0.5em;
+    text-indent: 2em;
+    list-style:disc;
+    list-style-position: inside;
+}
+
 
 
 .tagline {
@@ -272,6 +326,10 @@ li {
     border-bottom: none;
     font-size: 18px;
   
+}
+
+footer p{
+    font-size: 18px;
 }
 
 

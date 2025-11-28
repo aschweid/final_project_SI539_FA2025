@@ -42,9 +42,10 @@ document.querySelector(".menu_icon").addEventListener("keydown", function (event
 });
 
 
-
+if(document.querySelector(".recipe_week_box") != null){
 document.querySelector(".recipe_week_box").addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
-        document.querySelectorAll(".recipe_week_box").click();
+        document.querySelector(".recipe_week_box").click();
     }
 });
+}
