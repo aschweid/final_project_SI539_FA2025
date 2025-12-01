@@ -11,7 +11,7 @@
 
 .skip a:focus {
     top: 25px;
-    left: 10px;    
+    left: 10px;
     background-color: #FAEBD7;
     border: 3px solid #242F40;
 }
@@ -71,6 +71,43 @@
 
 }
 
+
+
+/* Style the buttons */
+/*modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements*/
+#myBtnContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #A53860;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #FAEBD7;
+    cursor: pointer;
+    color: #242F40;
+    font-size: 16px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #495669;
+    color:#FAEBD7;
+}
+
+.btn.active {
+    background-color: #B7c9e2;
+    color: #242F40;
+}
+
 /*Adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
 
 
@@ -97,18 +134,18 @@ footer {
     line-height: 1.25;
 }
 
-footer p{
+footer p {
     font-size: 16px;
 }
 
-footer p:first-child{
+footer p:first-child {
     padding-bottom: 1em;
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -122,25 +159,25 @@ footer p:first-child{
 
 
 .social-media-icon-group {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:15px;
+    gap: 15px;
     justify-content: right;
     align-content: center;
     width: auto;
 }
 
 
-.social-media-icon svg{
-    width:40px;
-    height:auto;
-    fill:#FAEBD7;
+.social-media-icon svg {
+    width: 40px;
+    height: auto;
+    fill: #FAEBD7;
 }
 
 
- .social-media-icon{
-  display: inline-block;
+.social-media-icon {
+    display: inline-block;
 }
 
 
@@ -153,7 +190,8 @@ h1 {
     font-family: 'Lucida Handwriting';
     color: #FAEBD7;
     background-color: #A53860;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
+
 }
 
 h2 {
@@ -210,9 +248,9 @@ div.recipe_of_the_week_card {
     padding-bottom: 1em;
 }
 
-.recipe_week_box a{
+.recipe_week_box a {
     text-decoration: none;
-    color:#242F40;
+    color: #242F40;
 }
 
 .recipe_card,
@@ -266,10 +304,10 @@ li {
     padding-bottom: 1em;
 }
 
-.seasoning_options{
+.seasoning_options {
     padding-top: 0.5em;
     text-indent: 2em;
-    list-style:disc;
+    list-style: disc;
     list-style-position: inside;
 }
 
@@ -306,36 +344,40 @@ li {
 }
 
 
+div.title.entree_title h1{
+    margin-bottom: 0;
+}
+
 
 @media screen and (min-width:820px) {
 
 
-.menu_icon img {
-   display: none;
-}
+    .menu_icon img {
+        display: none;
+    }
 
 
-#myLinks {
-    display:contents;
-    flex-direction: row;
-}
+    #myLinks {
+        display: contents;
+        flex-direction: row;
+    }
 
 
-#myLinks a {
-    display: inline-block;
-    border-bottom: none;
-    font-size: 18px;
-  
-}
+    #myLinks a {
+        display: inline-block;
+        border-bottom: none;
+        font-size: 18px;
 
-footer p{
-    font-size: 18px;
-}
+    }
 
-.social-media-icon svg{
-    width:60px;
-    height:auto;
-}
+    footer p {
+        font-size: 18px;
+    }
+
+    .social-media-icon svg {
+        width: 50px;
+        height: auto;
+    }
 
 
 }

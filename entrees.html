@@ -36,8 +36,17 @@
 
 
 
-        <div class="title" tabindex="0">
+        <div class="title entree_title" tabindex="0">
             <h1>Entree Recipes</h1>
+        </div>
+
+        <!--modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements*/
+#myBtnContainer-->
+        <div id="myBtnContainer">
+            <button tabindex="0" class="btn active btnAll"> Show all</button>
+            <button tabindex="0" class="btn btnChicken"> Chicken</button>
+            <button tabindex="0" class="btn btnFish">Fish</button>
+            <button tabindex="0" class="btn btnVeg">Vegetarian</button>
         </div>
 
 
@@ -46,7 +55,7 @@
     <main id="main">
         <div class="entree_container">
 
-            <div class="recipe_card" tabindex="0">
+            <div class="recipe_card chicken" tabindex="0">
                 <h2>Lemon chicken</h2>
 
                 <img src="images/lemon_chicken.jpg" alt="Chicken with a lemon butter sauce">
@@ -67,7 +76,28 @@
 
             </div>
 
-            <div class="recipe_card" tabindex="0">
+
+
+            <div class="recipe_card chicken" tabindex="0">
+                <h2>Chicken Lettuce Wraps</h2>
+
+                <img src="images/lettuce_wraps.jpg" alt="Chicken and veggetable lettuce wraps">
+                <ol class="recipe_steps">
+                    <li>Whisk together 3 tbsp soy sauce, 2 tbsp brown sugar, 1.5 tbsp sesame oil, 1 tbsp of chili garlic
+                        sauce, salt and pepper in a bowl</li>
+                    <li>Set aside some of the sauce for later</li>
+                    <li>Cut chicken into thin strips and add them to the marinade</li>
+                    <li>If time, let the chicken sit in the marinade for a few hours</li>
+                    <li>Heat oil to medium-high heat in a pan and cook chicken</li>
+                    <li>Add chicken to butter lettuce leaves and top with slicked cucumber, green onions and cilantro
+                    </li>
+                    <li>Heat remaining sauce on the stove to thicken and drizzle over the lettuce wraps</li>
+                </ol>
+            </div>
+
+
+
+            <div class="recipe_card chicken" tabindex="0">
                 <h2>Chicken Cutlets</h2>
 
                 <img src="images/chicken_cutlets.jpg" alt="Chicken cutlets on a plate with lemon">
@@ -84,7 +114,7 @@
 
 
 
-            <div class="recipe_card" tabindex="0">
+            <div class="recipe_card vegetarian" tabindex="0">
                 <h2>Grilled Cheese</h2>
 
                 <img src="images/grilled_cheese.jpg" alt="Grilled Cheese Sandwich">
@@ -96,7 +126,7 @@
                 </ol>
             </div>
 
-            <div class="recipe_card" tabindex="0">
+            <div class="recipe_card chicken" tabindex="0">
                 <h2>Chicken Stir Fry</h2>
 
                 <img src="images/stir_fry.jpg" alt="Chicken stir fry with rice and brocolli">
@@ -114,7 +144,7 @@
             </div>
 
 
-            <div class="recipe_card" id="recipe-of-week" tabindex="0">
+            <div class="recipe_card chicken" id="recipe-of-week" tabindex="0">
                 <h2>Homemade Chipotle Bowls</h2>
 
                 <img src="images/chipotle_bowl.jpg" alt="Chipotle bowl with chicken, beans and veggetables">
@@ -127,12 +157,46 @@
                 </ol>
             </div>
 
+
+            <div class="recipe_card chicken" id="recipe-of-week" tabindex="0">
+                <h2>Chicken and Pineapple Curry</h2>
+
+                <img src="images/pineapple_curry.jpg" alt="Coconut curry with chicken,veggetables and pineapple">
+                <ol class="recipe_steps">
+                    <li>Cut 1-2 chicken breasts into cubes</li>
+                    <li>Season chicken with salt, pepper, paprika and garlic powder</li>
+                    <li>Cook chicken in olive oil on the stove then set aside</li>
+                    <li>Using the same pan on medium heat add minced garlic and 2 tbsp of red curry paste and mix with
+                        the leftover oil</li>
+                    <li>Add in 3/4 of a can of coconut milk, diced bell pepper and carrots cut into thin sticks</li>
+                    <li>Cook until veggetables are tender, then add ~1 cup of cubed pineapple</li>
+                    <li>Bring the curry to a simmer and season with salt to taste</li>
+                    <li>Stir in chicken and chopped cilantro</li>
+                    <li>Remove from heat and serve with rice and extra cilantro</li>
+                </ol>
+            </div>
+
+
+            <div class="recipe_card vegetarian" id="recipe-of-week" tabindex="0">
+                <h2>Homemade Pizza</h2>
+
+                <img src="images/pizza.jpg" alt="Cheese pizza on a metal pan">
+                <ol class="recipe_steps">
+                    <li>Pick up pre made pizza dough from Kroger or Trader Joes, or make your own</li>
+                    <li>Line a baking sheet with parchment paper or spray with cooking spray</li>
+                    <li>Spread dough out into a circle</li>
+                    <li>Top with your choice of tomato sauce, seasonings, cheese and other toppings</li>
+                    <li>Bake at 425* F for 15 minutes or until fully cooked</li>
+                </ol>
+            </div>
+
+
         </div>
 
     </main>
 
 
-       <footer>
+    <footer>
 
         <div class="footer-content">
 
