@@ -98,9 +98,10 @@
     font-size: 16px;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: #495669;
-    color:#FAEBD7;
+    color: #FAEBD7;
 }
 
 .btn.active {
@@ -344,7 +345,7 @@ li {
 }
 
 
-div.title.entree_title h1{
+div.title.entree_title h1 {
     margin-bottom: 0;
 }
 
@@ -378,6 +379,24 @@ div.title.entree_title h1{
     .social-media-icon svg {
         width: 50px;
         height: auto;
+    }
+
+
+}
+
+
+@media (prefers-reduced-motion) {
+
+    .website-summary:hover,
+    .recipe_card:hover,
+    .recipe_of_the_week_card:hover {
+        transform: none;
+    }
+
+    .website-summary,
+    .recipe_card,
+    .recipe_of_the_week_card {
+        transition: none;
     }
 
 

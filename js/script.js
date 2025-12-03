@@ -1,6 +1,5 @@
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-//https://www.w3schools.com/howto/howto_css_overlay.asp
 
 
 document.addEventListener('DOMContentLoaded', function () {
