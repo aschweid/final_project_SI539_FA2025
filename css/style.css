@@ -221,7 +221,7 @@ img {
 .recipe_of_the_week {
     text-align: center;
     padding-bottom: 2em;
-    padding-top: 1.5em;
+    padding-top: 3em;
     font-weight: bolder;
 }
 
@@ -244,6 +244,10 @@ div.recipe_of_the_week_card {
     padding-left: 1em;
     padding-right: 1em;
     justify-self: center;
+}
+
+.recipe_of_the_week_card img{
+    padding-bottom: 1em;
 }
 
 .recipe_of_the_week_card h2 {
