@@ -82,6 +82,8 @@
     flex-wrap: wrap;
     background-color: #A53860;
     padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
     margin-bottom: 2em;
     justify-content: center;
 }

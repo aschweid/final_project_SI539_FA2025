@@ -62,6 +62,7 @@ if (document.querySelector(".btnAll") != null) {
         document.querySelector(".btnChicken").classList.remove("active");
         document.querySelector(".btnFish").classList.remove("active");
         document.querySelector(".btnVeg").classList.remove("active");
+        document.querySelector(".btnPork").classList.remove("active");
 
 
         const chickElements = document.getElementsByClassName("chicken");
@@ -79,6 +80,11 @@ if (document.querySelector(".btnAll") != null) {
             vegElements[i].style.display = "block";
         }
 
+           const porkElements = document.getElementsByClassName("pork");
+        for (let i = 0; i < porkElements.length; i++) {
+            porkElements[i].style.display = "block";
+        }
+
     });
 }
 
@@ -92,6 +98,7 @@ if (document.querySelector(".btnChicken") != null) {
         document.querySelector(".btnAll").classList.remove("active");
         document.querySelector(".btnFish").classList.remove("active");
         document.querySelector(".btnVeg").classList.remove("active");
+        document.querySelector(".btnPork").classList.remove("active");
 
 
         const chickElements = document.getElementsByClassName("chicken");
@@ -107,6 +114,11 @@ if (document.querySelector(".btnChicken") != null) {
         const vegElements = document.getElementsByClassName("vegetarian");
         for (let i = 0; i < vegElements.length; i++) {
             vegElements[i].style.display = "none";
+        }
+
+        const porkElements = document.getElementsByClassName("pork");
+        for (let i = 0; i < porkElements.length; i++) {
+            porkElements[i].style.display = "none";
         }
 
 
@@ -123,6 +135,7 @@ if (document.querySelector(".btnFish") != null) {
         document.querySelector(".btnAll").classList.remove("active");
         document.querySelector(".btnChicken").classList.remove("active");
         document.querySelector(".btnVeg").classList.remove("active");
+        document.querySelector(".btnPork").classList.remove("active");
 
 
         const chickElements = document.getElementsByClassName("chicken");
@@ -140,20 +153,26 @@ if (document.querySelector(".btnFish") != null) {
             vegElements[i].style.display = "none";
         }
 
+           const porkElements = document.getElementsByClassName("pork");
+        for (let i = 0; i < porkElements.length; i++) {
+            porkElements[i].style.display = "none";
+        }
+
 
     });
 }
 
 
-//Vegetarian Button
-if (document.querySelector(".btnVeg") != null) {
-    document.querySelector(".btnVeg").addEventListener("click", function () {
-        console.log("Vegetarian pressed");
+//Pork Button
+if (document.querySelector(".btnPork") != null) {
+    document.querySelector(".btnPork").addEventListener("click", function () {
+        console.log("Fish pressed");
 
-        document.querySelector(".btnVeg").classList.add("active");
+        document.querySelector(".btnPork").classList.add("active");
+        document.querySelector(".btnFish").classList.remove("active");
         document.querySelector(".btnAll").classList.remove("active");
         document.querySelector(".btnChicken").classList.remove("active");
-        document.querySelector(".btnFish").classList.remove("active");
+        document.querySelector(".btnVeg").classList.remove("active");
 
 
         const chickElements = document.getElementsByClassName("chicken");
@@ -168,7 +187,50 @@ if (document.querySelector(".btnVeg") != null) {
 
         const vegElements = document.getElementsByClassName("vegetarian");
         for (let i = 0; i < vegElements.length; i++) {
+            vegElements[i].style.display = "none";
+        }
+
+        const porkElements = document.getElementsByClassName("pork");
+        for (let i = 0; i < porkElements.length; i++) {
+            porkElements[i].style.display = "block";
+        }
+
+
+    });
+}
+
+
+//Vegetarian Button
+if (document.querySelector(".btnVeg") != null) {
+    document.querySelector(".btnVeg").addEventListener("click", function () {
+        console.log("Vegetarian pressed");
+
+        document.querySelector(".btnVeg").classList.add("active");
+        document.querySelector(".btnAll").classList.remove("active");
+        document.querySelector(".btnChicken").classList.remove("active");
+        document.querySelector(".btnFish").classList.remove("active");
+        document.querySelector(".btnPork").classList.remove("active");
+
+
+        const chickElements = document.getElementsByClassName("chicken");
+        for (let i = 0; i < chickElements.length; i++) {
+            chickElements[i].style.display = "none";
+        }
+
+        const fishElements = document.getElementsByClassName("fish");
+        for (let i = 0; i < fishElements.length; i++) {
+            fishElements[i].style.display = "none";
+        }
+
+
+        const vegElements = document.getElementsByClassName("vegetarian");
+        for (let i = 0; i < vegElements.length; i++) {
             vegElements[i].style.display = "block";
+        }
+
+        const porkElements = document.getElementsByClassName("pork");
+        for (let i = 0; i < porkElements.length; i++) {
+            porkElements[i].style.display = "none";
         }
 
     });
